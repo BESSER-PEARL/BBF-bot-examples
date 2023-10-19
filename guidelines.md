@@ -10,10 +10,10 @@ This is the list of actions you should address:
 
 - [x] Edit the [Project Description](#-project-description).
 - [x] Review and adapt the [Contributing guidelines](#-contributing-guidelines).
-- [ ] Review and adapt the [Code of Conduct](#%EF%B8%8F-code-of-conduct).
-- [ ] Review and adapt the [Governance](#%EF%B8%8F-governance) rules.
-- [ ] Choose a [License](#%EF%B8%8F-license).
-- [ ] Edit the [Readme](#%EF%B8%8F-readme).
+- [x] Review and adapt the [Code of Conduct](#%EF%B8%8F-code-of-conduct).
+- [x] Review and adapt the [Governance](#%EF%B8%8F-governance) rules.
+- [x] Choose a [License](#%EF%B8%8F-license).
+- [x] Edit the [Readme](#%EF%B8%8F-readme).
 
 ### The shoulds
 
