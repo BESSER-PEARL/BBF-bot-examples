@@ -6,4 +6,4 @@ To start, simply execute:
 ```console
 python ./greetings_bot.py
 ```
-You can then access your bot on http://localhost:5000.
+You can then access your bot at http://localhost:5000.
