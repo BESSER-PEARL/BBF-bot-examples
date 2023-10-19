@@ -20,3 +20,9 @@ python ./mobiliteit_bot.py
 ```
 You can then access your bot at http://localhost:5000.
 
+## Example Chat Snippets
+
+In the following example, you can see a user trying to get a possible connection from "Differdange, Schoul" to "Belvaux" (note that the user does not name the exact name of the stop in Belvaux):
+
+
+In the next example, you see a user wanting to change the language from English to French, as they might feel more comfortable with French:
