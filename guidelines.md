@@ -8,7 +8,7 @@ This is the list of actions you should address:
 
 ### The musts
 
-- [ ] Edit the [Project Description](#-project-description).
+- [x] Edit the [Project Description](#-project-description).
 - [ ] Review and adapt the [Contributing guidelines](#-contributing-guidelines).
 - [ ] Review and adapt the [Code of Conduct](#%EF%B8%8F-code-of-conduct).
 - [ ] Review and adapt the [Governance](#%EF%B8%8F-governance) rules.
