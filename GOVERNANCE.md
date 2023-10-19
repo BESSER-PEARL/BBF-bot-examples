@@ -6,9 +6,9 @@ The development and community management of the project will follow the governan
 
 Project maintainers have admin access to the GitHub repository. The team of project maintainer is the following:
 
-* [Maintainer 1](https://github.com/USER1/) 
-* [Maintainer 2](https://github.com/USER2/) 
-* [Maintainer 3](https://github.com/USER3/) 
+* [Maintainer 1](https://github.com/Aran30) 
+* [Maintainer 2](https://github.com/mgv99) 
+* [Maintainer 3](https://github.com/jcabot) 
 
 ## 1. Roles
 
