@@ -24,5 +24,8 @@ You can then access your bot at http://localhost:5000.
 
 In the following example, you can see a user trying to get a possible connection from "Differdange, Schoul" to "Belvaux" (note that the user does not name the exact name of the stop in Belvaux):
 
+![image](https://github.com/BESSER-PEARL/BBF-bot-examples/blob/main/examples/mobilit%C3%A9it_bot/Mobilit%C3%A9it_Chat_Example_1.png)
 
 In the next example, you see a user wanting to change the language from English to French, as they might feel more comfortable with French:
+
+![image](https://github.com/BESSER-PEARL/BBF-bot-examples/blob/main/examples/mobilit%C3%A9it_bot/Mobilit%C3%A9it_Chat_Example_2.png)
