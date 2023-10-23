@@ -5,8 +5,20 @@ Welcome to the Besser-Bot-Framework (BBF) examples repository! This collection s
 
     examples/: In this folder, you'll find a range of example bot models, each demonstrating different use cases and functionalities. Feel free to explore these examples to gain insights into building your own chatbots.
 
-### Getting Started
+### Requirements
 
+- Python 3.11
+- Recommended: Create a virtual environment
+  (e.g. [venv](https://docs.python.org/3/library/venv.html),
+  [conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html))
+- Install the [package](https://pypi.org/project/besser-bot-framework/):
+
+```bash
+pip install besser-bot-framework
+```
+
+### Getting Started
+ 
 To run the example bots or contribute your own, follow the instructions provided within each example's folder. These instructions will guide you through the setup, configuration, and execution of the bot.
 ### Contributions
 
