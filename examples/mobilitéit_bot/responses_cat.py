@@ -51,7 +51,7 @@ s1_text = "Podries dir-me d'on vols començar? (El nom de l'estació d'autobús 
 
 help_text = "La meva feina és ajudar-te a trobar un autobús o tren que puguis agafar per anar a un altre lloc de Luxemburg 🇱🇺 🚄 🚌! De moment, només puc ajudar-te si em dius el nom exacte d'una parada d'autobús o tren, o si em dius noms de ciutats. Actualment, només puc ajudar-te amb rutes que tinguin una connexió directa, així que si es requereix un transbordament, no podré ajudar 😢."
 
-stop_list_text = "Quines de les següents parades d'autobús/tren corresponen a la teva?"
+stop_list_text = "Quines de les següents parades d'autobús/tren corresponen a la teva? \n"
 
 def start_location_text(stop):
     return "D'acord, el teu punt de partida és " + stop + "!"

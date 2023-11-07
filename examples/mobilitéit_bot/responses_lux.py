@@ -55,7 +55,7 @@ s1_text = "Kinnst du mir soen, wous du grad bass? (De Numm vum Busarret oder de 
 
 help_text = "Meng Aufgab ass et, dir bei der Sich no engem Bus oder Zuch ze ënnerstëtzen, deens du kanns huele fir dech a Lëtzebuerg ze deplacéieren 🇱🇺 🚄 🚌! Am Moment kann ech dir hëllefe wann du mir de genauen Numm vun engem Bus- oder Zucharrêt sees oder wann du mir den Numm vun dengem Duerf sees. Aktuell kann ech dech nëmmen mat Weeër ënnerstëtzen déi eng direkt Verbindung hunn, esou dass ech net kann hëllefen, wann eng kéier Emtseigen néideg ass 😢."
 
-stop_list_text = "Wéi vill vun deene folgend Bus-/Zucharrêten kënne mat dengem korrespondéieren?"
+stop_list_text = "Wéieen vun deene folgend Bus-/Zucharrêten kënne mat dengem korrespondéieren? \n"
 
 def start_location_text(stop):
     return "Okay, däi Startpunkt ass " + stop + "!"
