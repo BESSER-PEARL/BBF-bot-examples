@@ -10,6 +10,7 @@ import responses_es
 # You may need to add your working directory to the Python path. To do so, uncomment the following lines of code
 # import sys
 # sys.path.append("/Path/to/directory/bot-framework") # Replace with your directory path
+import re
 from besser.bot.nlp.intent_classifier.intent_classifier_prediction import IntentClassifierPrediction
 from besser.bot.core.bot import Bot
 from besser.bot.core.session import Session
@@ -272,8 +273,8 @@ def destination_location_body(session: Session):
         dest_stop = session.get("dest")
     if dest_stop is not None:
         session.reply(responses.travel_path_text(session.get("start"), dest_stop))
-        start = data[data["stop_name"].str.match("(?i)" + session.get("start"))]
-        destination = data[data["stop_name"].str.match("(?i)" + dest_stop)]
+        start = data[data["stop_name"].str.match("(?i)" + re.escape(session.get("start")))]
+        destination = data[data["stop_name"].str.match("(?i)" + re.escape(dest_stop))]
         response = get_trip_info(start["stop_id"], destination["stop_id"])
         if response != "":
             session.reply(response)    
