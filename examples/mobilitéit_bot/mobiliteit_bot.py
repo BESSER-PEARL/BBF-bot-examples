@@ -329,7 +329,7 @@ destination_location_fallback_state.when_no_intent_matched_go_to(destination_loc
 # Global states
 
 def language_body(session: Session):
-    session.reply("Alright which language do you want to use?")
+    session.reply(responses.language_choose)
     session.reply("1. English \n 2. Deutsch \n 3. Francais \n 4. Español \n 5. Catalán \n 6. Lëtzebuergesch")
 
 
