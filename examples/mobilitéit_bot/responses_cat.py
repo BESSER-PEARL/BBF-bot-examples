@@ -1,7 +1,8 @@
 hello_intent_text = [
     'hola',
     'bon dia',
-    'ei'
+    'ei',
+    'start'
 ]
 
 bye_intent_text = [
@@ -43,15 +44,20 @@ destination_location_intent_text = [
 def final_response(bus_name, dep_time):
     return "Pots agafar l'autobús " + bus_name + " que surt a les " + dep_time
 
-greeting_text = "Hola! Sóc el Bot Mobiliteit i estic aquí per ajudar-te a desplaçar-te pel Lluxemburg utilitzant el transport públic! Per començar, podríes dir-me d'on vols començar? (El nom de l'estació d'autobús o el nom del lloc 🚌!)"
+greeting_text = "Hola! Sóc el Bot Mobiliteit i estic aquí per ajudar-te a desplaçar-te pel Lluxemburg utilitzant el transport públic! Per començar, podríes dir-me d'on vols començar? (El nom de l'estació d'autobús o el nom del lloc 🚌!, tingues en compte que actualment només entenc els noms en francès 🥺). Demana ajuda en qualsevol moment i digue'm si vols canviar d'idioma!"
 
 fallback_s0_text = "No he entès això 😅. Potser intenta demanar ajuda si vols alguns consells útils!"
 
-s1_text = "Podries dir-me d'on vols començar? (El nom de l'estació d'autobús o el nom del lloc 🚌!)"
+s1_text = "Podries dir-me d'on vols començar? (El nom de l'estació d'autobús o el nom del lloc 🚌!, tingues en compte que actualment només entenc els noms en francès 🥺) Demana ajuda en qualsevol moment i digue'm si vols canviar d'idioma!"
 
 help_text = "La meva feina és ajudar-te a trobar un autobús o tren que puguis agafar per anar a un altre lloc de Luxemburg 🇱🇺 🚄 🚌! De moment, només puc ajudar-te si em dius el nom exacte d'una parada d'autobús o tren, o si em dius noms de ciutats. Actualment, només puc ajudar-te amb rutes que tinguin una connexió directa, així que si es requereix un transbordament, no podré ajudar 😢."
 
-stop_list_text = "Quines de les següents parades d'autobús/tren corresponen a la teva? \n"
+stop_list_text = "Quines de les següents parades d'autobús/tren corresponen a la teva? Introdueix només el número!\n"
+
+retry_text_1 = "Tornem-ho a provar! Des de quina parada o ciutat vols començar? Tingues en compte que el nom de la ciutat ha de ser en francès 🤓"
+retry_text_2 = "Tornem-ho a provar! Cap a quina parada o ciutat vols viatjar? Tingues en compte que el nom de la ciutat ha de ser en francès 🤓"
+
+
 
 def start_location_text(stop):
     return "D'acord, el teu punt de partida és " + stop + "!"

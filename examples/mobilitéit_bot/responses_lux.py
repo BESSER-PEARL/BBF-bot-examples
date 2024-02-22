@@ -2,7 +2,8 @@ hello_intent_text = [
     'moien',
     'salut',
     'hallo',
-    'yo'
+    'yo',
+    'start'
 ]
 
 bye_intent_text = [
@@ -47,15 +48,19 @@ destination_location_intent_text = [
 def final_response(bus_name, dep_time):
     return "Du kanns den " + bus_name + " deen ëm " + dep_time + " fiert!"
 
-greeting_text = "Moien! Ech sinn den Mobiliteit-Bot, ech sinn hei fir dir am Land mam ëffentlechem Transport ze hëllefen! Fir unzefänken, kinnst du mir soen, wous du grad bass? (De Numm vum Busarret oder de Numm vum Duerf 🚌!)"
+greeting_text = "Moien! Ech sinn den Mobiliteit-Bot, ech sinn hei fir dir am Land mam ëffentlechem Transport ze hëllefen! Fir unzefänken, kinnst du mir soen, wous du grad bass? (De Numm vum Busarret oder de Numm vum Duerf 🚌!, bemierk datt ech momentan nëmmen déi franséisch Nimm versti 🥺). Fro no Hëllef wanns du wëlls an so mir, ob du d'Sprooch wiesselen wëlls!"
 
 fallback_s0_text = "Dat hun ech net verstan 😅. Probeier eventuell fir Hëllef ze Froen, wanns de wëlls!"
 
-s1_text = "Kinnst du mir soen, wous du grad bass? (De Numm vum Busarret oder de Numm vum Duerf 🚌!"
+s1_text = "Kinnst du mir soen, wous du grad bass? (De Numm vum Busarret oder de Numm vum Duerf 🚌!, bemierk datt ech momentan nëmmen déi franséisch Nimm verstin 🥺). Fro no Hëllef wanns du wëlls an so mir, ob du d'Sprooch wiesselen wëlls!"
 
 help_text = "Meng Aufgab ass et, dir bei der Sich no engem Bus oder Zuch ze ënnerstëtzen, deens du kanns huele fir dech a Lëtzebuerg ze deplacéieren 🇱🇺 🚄 🚌! Am Moment kann ech dir hëllefe wann du mir de genauen Numm vun engem Bus- oder Zucharrêt sees oder wann du mir den Numm vun dengem Duerf sees. Aktuell kann ech dech nëmmen mat Weeër ënnerstëtzen déi eng direkt Verbindung hunn, esou dass ech net kann hëllefen, wann eng kéier Emtseigen néideg ass 😢."
 
-stop_list_text = "Wéieen vun deene folgend Bus-/Zucharrêten kënne mat dengem korrespondéieren? \n"
+stop_list_text = "Wéieen vun deene folgend Bus-/Zucharrêten kënne mat dengem korrespondéieren? Gëff just d'Nummer an!\n"
+
+retry_text_1 = "Looss eis et nach eng Kéier probéieren! Vun wéi enger Haltestell oder Stad wëlls du ufänken? Huelt w.e.g. zur Kenntnis, dass den Numm vun der Stad op Franséisch muss sinn 🤓"
+retry_text_2 = "Looss eis et nach eng Kéier probéieren! Op wéi eng Haltestell oder Stad wëlls du reesen? Huelt w.e.g. zur Kenntnis, dass den Numm vun der Stad op Franséisch muss sinn 🤓"
+
 
 def start_location_text(stop):
     return "Okay, däi Startpunkt ass " + stop + "!"

@@ -1,7 +1,8 @@
 hello_intent_text = [
     'hallo',
     'hi',
-    'hey'
+    'hey',
+    'start'
 ]
 
 bye_intent_text = [
@@ -43,15 +44,19 @@ destination_location_intent_text = [
 def final_response(bus_name, dep_time):
     return "Du kannst den " + bus_name + " nehmen, der um " + dep_time + " abfährt."
 
-greeting_text = "Hallo! Ich bin Mobiliteit-Bot und ich bin hier, um dir zu helfen, dich in Luxemburg mit öffentlichen Verkehrsmitteln fortzubewegen! Um zu beginnen, könntest du mir bitte sagen, von wo aus du starten möchtest? (Name der Bushaltestelle oder Name des Ortes 🚌!)"
+greeting_text = "Hallo! Ich bin Mobiliteit-Bot und ich bin hier, um dir zu helfen, dich in Luxemburg mit öffentlichen Verkehrsmitteln fortzubewegen! Um zu beginnen, könntest du mir bitte sagen, von wo aus du starten möchtest? (Name der Bushaltestelle oder Name des Ortes 🚌!, beachte, dass ich derzeit nur die französischen Namen verstehe 🥺). Du kannst jederzeit um Hilfe fragen und sag Bescheid, falls du die Sprache wechseln möchtest!"
 
 fallback_s0_text = "Das habe ich nicht verstanden 😅. Versuche doch, nach Hilfe zu fragen, wenn du nützliche Tipps möchtest!"
 
-s1_text = "Könntest du mir bitte sagen, von wo aus du starten möchtest? (Name der Bushaltestelle oder Name des Ortes 🚌!)"
+s1_text = "Könntest du mir bitte sagen, von wo aus du starten möchtest? (Name der Bushaltestelle oder Name des Ortes 🚌!, beachte, dass ich derzeit nur die französischen Namen verstehe 🥺). Du kannst jederzeit um Hilfe fragen und sag Bescheid, falls du die Sprache wechseln möchtest!"
 
 help_text = "Meine Aufgabe ist es, dir zu helfen, einen Bus oder Zug zu finden, den du nutzen kannst, um an einen anderen Ort in Luxemburg zu reisen 🇱🇺 🚄 🚌! Im Moment kann ich dir helfen, wenn du mir den genauen Namen einer Bus- oder Zug-Haltestelle nennst oder wenn du mir Städtenamen nennst. Aktuell kann ich dir nur bei Direktverbindungen helfen, daher werde ich nicht in der Lage sein zu helfen, wenn ein Umstieg erforderlich ist 😢."
 
-stop_list_text = "Welche der folgenden Bus-/Zug-Haltestellen entsprechen deiner? \n"
+stop_list_text = "Welche der folgenden Bus-/Zug-Haltestellen entsprechen deiner? Gib nur die Nummer ein!\n"
+
+retry_text_1 = "Versuchen wir es noch einmal! Von welcher Haltestelle oder Stadt möchtest du starten? Beachte bitte, dass der Stadtname auf Französisch sein muss 🤓"
+retry_text_2 = "Versuchen wir es noch einmal! Zu welcher Haltestelle oder Stadt möchtest du reisen? Beachte bitte, dass der Stadtname auf Französisch sein muss 🤓"
+
 
 def start_location_text(stop):
     return "Alles klar, dein Startpunkt ist " + stop + "!"

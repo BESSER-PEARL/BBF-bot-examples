@@ -1,0 +1,31 @@
+# Use an official Python runtime as a parent image
+FROM python:3.11
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy the current directory contents into the container at /usr/src/app
+COPY . .
+
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir besser-bot-framework 
+RUN pip install --no-cache-dir pandas
+RUN pip install --no-cache-dir requests
+RUN sed -i 's/Chat Demo/Mobilitéit Bot/g' /usr/local/lib/python3.11/site-packages/besser/bot/platforms/websocket/streamlit_ui.py
+RUN sed -i '/with st.sidebar:/a \        st.markdown("By submitting messages, you acknowledge and consent to the processing of your information in compliance with Europe s GDPR regulations. Any message you write will be stored in its original form without mapping to identifiable user information, ensuring that your privacy is protected.")' /usr/local/lib/python3.11/site-packages/besser/bot/platforms/websocket/streamlit_ui.py
+
+# Create a Python script to download the punkt tokenizer
+RUN echo "import nltk; nltk.download('punkt')" > download_nltk_punkt.py
+
+# Run the script to download the punkt tokenizer
+RUN python download_nltk_punkt.py
+
+
+# Make port 8765 available to the world outside this container
+EXPOSE 5000
+EXPOSE 8765
+
+
+CMD ["python", "./mobiliteit_bot.py"]
+

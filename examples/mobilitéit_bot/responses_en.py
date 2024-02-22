@@ -1,7 +1,8 @@
 hello_intent_text = [
     'hello',
     'hi',
-    'hey'
+    'hey',
+    'start'
 ]
 
 bye_intent_text = [
@@ -43,15 +44,19 @@ destination_location_intent_text = [
 def final_response(bus_name, dep_time):
     return "You can take the " + bus_name + " that leaves at " + dep_time
 
-greeting_text = "Hello! I am Mobiliteit-Bot, I am here to help you get around in Luxembourg using public transportation! To start of, could you tell me from where you want to start? (The name of the bus stop or name of the location 🚌!)"
+greeting_text = "Hello! I am Mobiliteit-Bot, I am here to help you get around in Luxembourg using public transportation! To start of, could you tell me from where you want to start? (The name of the bus stop or name of the location 🚌!, note that I currently only understand the french names 🥺). Ask for help at any time and tell me if you want to switch language!"
 
 fallback_s0_text = "I didn't understand that 😅 maybe try asking for help if you want some useful tips!"
 
-s1_text = "Could you tell me from where you want to start? (The name of the bus stop or name of the location 🚌!)"
+s1_text = "Could you tell me from where you want to start? (The name of the bus stop or name of the location 🚌!). Ask for help at any time and tell me if you want to switch language!"
 
 help_text = "My job is to help you find a bus or train that you could take to travel to another location in Luxembourg 🇱🇺 🚄 🚌! As of now, I can help you if you tell me the exact name of a bus/train-stop or if you tell me city-names. \n Currently, I can only help you with paths that possess a direct connection, thus if a transfer is necessary, I will not be able to help 😢"
 
-stop_list_text = "Which of the following bus/train stops correspond to yours? \n"
+stop_list_text = "Which of the following bus/train stops correspond to yours? Please enter the number only! \n"
+
+retry_text_1 = "Lets try again! From which stop or city do you want to start? Take into account that the city name needs to be the french name 🤓"
+
+retry_text_2 = "Lets try again! To which stop or city do you want to travel? Take into account that the city name needs to be the french name 🤓"
 
 def start_location_text(stop):
     return "Alright, your starting point is " + stop + "!"
