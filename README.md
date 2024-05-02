@@ -3,7 +3,7 @@
 Welcome to the Besser-Bot-Framework (BBF) examples repository! This collection showcases a variety of example bot models created using our BBF.
 ### Repository Structure
 
-    examples/: In this folder, you'll find a range of example bot models, each demonstrating different use cases and functionalities. Feel free to explore these examples to gain insights into building your own chatbots.
+**examples/**: In this folder, you'll find a range of example bot models, each demonstrating different use cases and functionalities. Feel free to explore these examples to gain insights into building your own chatbots.
 
 ### Requirements
 
